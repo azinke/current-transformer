@@ -19,7 +19,8 @@ the `Arduino/libraries` folder.
 </div>
 
 - *R3*: shunt resistor (should checkout the datasheet of your sensor to get the 
-      right value
+      right value). This resisor could be build-in depending of the sensor or 
+      module.
 - *R1, R2*: 10k
 - *C1*: 100µF
 
