@@ -57,16 +57,26 @@ the `Arduino/libraries` folder.
 ```
 
 ```c++
-    float getMax();
+    float getMax(uint8_t unit);
     /**
         read the max value of the current
+
+        unit: 
+                (predefined constants)
+            mA: read max value in ampere
+            default unit: Ampere
     **/
 ```
 
 ```c++
-    float getMin();
+    float getMin(uint8_t unit);
     /**
         read the min value of the current
+
+        unit: 
+                (predefined constants)
+            mA: read max value in ampere
+            default unit: Ampere
     **/
 ```
 

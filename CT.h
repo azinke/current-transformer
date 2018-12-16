@@ -28,8 +28,8 @@ class CT{
         CT(uint16_t turns, uint16_t shunt, uint8_t calibre, uint8_t pin=A0);
         float getRawData();     // read raw data out of the sensor
         float read(uint8_t uint); // read Root Mean Square data
-        float getMax();
-        float getMin();
+        float getMax(uint8_t unit);
+        float getMin(uint8_t unit);
         float calibrate(); 
         float getOffset();
     private:
