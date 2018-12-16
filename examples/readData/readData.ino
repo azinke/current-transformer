@@ -16,12 +16,13 @@ void setup(){
 
 void loop(){
     Serial.print("Raw data : ");
-    Serial.print(currentSensor.getRawData());
+    Serial.print(currentSensor.getRawData(), 3);
     Serial.print(", Current: ");
-    Serial.print(currentSensor.read(mA));
-    Serial.print(" , Max: ");
-    Serial.print(currentSensor.read(MAX));
-    Serial.print(" , Min: ");
-    Serial.println(currentSensor.read(MIN));
+    Serial.print(currentSensor.read(mA), 3);
+    Serial.print(" mA , Max: ");
+    Serial.print(currentSensor.getMax(mA), 3);
+    Serial.print(" mA , Min: ");
+    Serial.println(currentSensor.getMin(mA), 3);
+    Serial.print(" mA");
     delay(1000);
 }

@@ -77,10 +77,9 @@ float CT::read(uint8_t unit){
         if(_buffer < minValue) minValue = _buffer;
     }
 
-    if(unit == MAX) return maxValue;
-    if(unit == MIN) return minValue;
-
     _buffer = (maxValue - minValue)/2.0;
+    if(unit == MAX) _buffer = maxValue - _offset;
+    if(unit == MIN) _buffer = _offset - minValue;
     _buffer = _buffer * VREF/1023.0;    // voltage
     _buffer /= _shunt;  // compute current through the shunt
     _buffer *= 0.70711; // RMS current through the shunt
@@ -92,22 +91,30 @@ float CT::read(uint8_t unit){
 /**
  *  @function: getMax
  *  @summary: read the max value of the current
- *  @parameters: none
+ *  @parameters:
+ *      unit: unit of the result
+ *            mA: for milliAmps
+ *            default unit: Amps
  *  @return: 
- *      float: max value
+ *      float: max value in Amps
  */
-float CT::getMax(){
+float CT::getMax(uint8_t unit){
+    if(unit == mA) return (read(MAX) * 1000.0);
     return read(MAX);    
 }
 
 /**
  *  @function: getMin
  *  @summary: read the min value of the current
- *  @parameters: none
+ *  @parameters:
+ *      unit: unit of the result
+ *            mA: for milliAmps
+ *            default unit: Amps
  *  @return: 
- *      float: min value
+ *      float: min value in Amps
  */
-float CT::getMin(){
+float CT::getMin(uint8_t unit){
+    if(unit == mA) return (read(MIN) * 1000.0);
     return read(MIN);    
 }
 
