@@ -12,6 +12,17 @@ the `Arduino/libraries` folder.
 
 > git clone https://github.com/azinke/current-transformer.git
 
+## Wiring
+
+<div style="text-align:center">
+    <img src="./docs/img/ct.png" />
+</div>
+
+- *R3*: shunt resistor (should checkout the datasheet of your sensor to get the 
+      right value
+- *R1, R2*: 10k
+- *C1*: 100µF
+
 ## Methods
 
 ```c++
