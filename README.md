@@ -75,7 +75,7 @@ the `Arduino/libraries` folder.
 
         unit: 
                 (predefined constants)
-            mA: read max value in ampere
+            mA: read max value in milliampere
             default unit: Ampere
     **/
 ```
@@ -87,7 +87,7 @@ the `Arduino/libraries` folder.
 
         unit: 
                 (predefined constants)
-            mA: read max value in ampere
+            mA: read max value in milliampere
             default unit: Ampere
     **/
 ```
