@@ -1,0 +1,32 @@
+#######################################
+# Syntax Coloring Map Current Transformer
+# by Kenneth AMOUSSOU
+# 	github: @azinke
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+CT		KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+read	KEYWORD2
+calibrate	KEYWORD2
+getRawData	KEYWORD2
+getMax	    KEYWORD2
+getMin   KEYWORD2
+getOffset   KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+# Sensivitity values
+MAX	LITERAL1	Constants
+MIN	LITERAL1	Constants
+
+# Current units
+A	LITERAL1	Constants
+mA	LITERAL1	Constants
