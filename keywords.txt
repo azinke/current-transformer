@@ -8,7 +8,7 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-CT		KEYWORD1
+CT	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
@@ -16,9 +16,9 @@ CT		KEYWORD1
 read	KEYWORD2
 calibrate	KEYWORD2
 getRawData	KEYWORD2
-getMax	    KEYWORD2
-getMin   KEYWORD2
-getOffset   KEYWORD2
+getMax	KEYWORD2
+getMin	KEYWORD2
+getOffset	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
